@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Blackjack - Vite</title>
+  </head>
+  <body>
+    <header class="game-title">BlackJack Game</header>
+  <div class="action-buttons-container">
+    <button id="btn-new-game" class="btn btn-primary">New Game</button>
+    <button id="btn-hit-card" class="btn btn-primary">Hit Card</button>
+    <button id="btn-stand" class="btn btn-danger">Stand</button>
+  </div>
+
+  <div id="victory-message-container" class="message-container" style="display: none;">
+    <span id="message-content" class="victory-message"></span>
+  </div>
+
+  <div class="cards-section">
+    <div class="row container cards-container">
+      <div class="col">
+        <h2>Player: <small id="player-points"></small></h2>
+        <div id="player-cards" class="cardsContainer">
+        </div>
+      </div>
+    </div>
+      
+    <div class="row container cards-container">
+      <div class="col">
+        <h2>Computer: <small id="computer-points"></small></h2>
+        <div id="computer-cards" class="cardsContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
